@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    font-size: 1.2em;
+    position: sticky;
+}
+.navcolumn{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1650px;
+    margin: 0 auto;
+}
+#logo{
+    display: flex;
+    color: purple;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 500;
+    font-family: 'Nanum Brush Script';
+}
+.deskmenu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navitem{
+    height: 80px;
+    margin-right: 10px;
+    padding: 10px 0;
+    font-weight: 550;
+}
+.navitem a:hover{
+    color: purple;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+.navlink{
+    color: black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    padding: 0px 10px;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 4s ease-out, transform 1s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 85vh;
+    padding: 0 100px;
+    overflow: hidden;
+}
+.cols{
+    width: 50%;
+}
+.Linetop{
+    display: block;
+    position: relative;
+    font-weight: bold;
+    font-size: 3em;
+    color: purple;
+}
+.header h1{
+    display: block;
+    color: grey;
+    font-weight: 600;
+    font-size: 3em;
+    z-index: 5;
+}
+.header span{
+    color: purple;
+}
+p{
+    display: block;
+    color: grey;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    margin: 0 10em;
+}
+.imgbox .img{
+    position: relative;
+    height: 100%;
+    width: calc(100% - 80);
+    top: -10px;
+    right: 50px;
+    animation: AnimationClip 4s linear infinite;
+}
+@keyframes AnimationClip{
+    50%{
+        right: 30px;
+        top: -20px;
+    }
+}
+
+
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 85vh;
+    padding: 0 100px;
+    overflow: hidden;
+}
+.cols01{
+    width: 50%;
+}
+.about h1{
+    display: block;
+    color: purple;
+    font-weight: 800;
+    font-size: 2.5em;
+    z-index: 5;
+}
+.cols01 .MyImg{
+    border-radius: 20px;
+    box-shadow: 3px 2px 10px 5px;
+}
+.resume{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #e1e1e1;
+    margin-top: 1em;
+    display: flex;
+    float: right;
+    color: purple;
+    border-radius: 10px;
+}
+.resume:hover{
+    background-color: grey;
+}
+
+
+
+
+.skillsSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 85vh;
+    padding: 0 100px;
+    overflow: hidden;
+}
+.skillsContainer{
+    width: 80%;
+    color: grey;
+}
+.skillsSec h2{
+    font-size: 2.5em;
+    color: purple;
+    font-weight: 800;
+}
+.skillsSec h1{
+    display: flex;
+    color: grey;
+    font-weight: 300;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.Con{
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ddd;
+    border-radius: 10px;
+    transform: scaleY(0);
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out, max-height .3s ease-in-out;
+    transform-origin: top center;
+}
+.skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: black;
+    margin-top: 10px;
+}
+.Html{
+    width: 60%;
+    background-color: purple;
+    border-radius: 10px;
+}
+.Css{
+    width: 60%;
+    background-color: purple;
+    border-radius: 10px;
+}
+.Py{
+    width: 90%;
+    background-color: purple;
+    border-radius: 10px;
+}
+.Java{
+    width: 50%;
+    background-color: purple;
+    border-radius: 10px;
+}
+.Js{
+    width: 40%;
+    background-color: purple;
+    border-radius: 10px;
+}
+.Cp{
+    width: 80%;
+    background-color: purple;
+    border-radius: 10px;
+}
+.Con.show {
+    opacity: 1;
+    transform: scaleY(1);
+}
+.skillsImg{
+    position: relative;
+    width: 40%;
+    margin: 0 10em;
+}
+
+.skillsImg .img1{
+    position: relative;
+    height: 100%;
+    width: calc(100% - 80);
+    top: -10px;
+    left: 50px;
+    animation: AnimationClip1 4s linear infinite;
+}
+@keyframes AnimationClip1{
+    50%{
+        left: 30px;
+        top: -20px;
+    }
+}
+
+
+
+
+
+.project{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 65vh;
+    padding: 0 100px;
+    overflow: hidden;
+}
+.cols02{
+    width: 35%;
+}
+.project h2{
+    font-size: 2.5em;
+    color: purple;
+    font-weight: 800;
+    display: flex;
+    margin-top: 3em;
+}
+.projectsContainer{
+    margin-left: 8em;
+}
+.proj{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px .8px;
+    margin-top: 1em;
+    animation: AnimationClip2 4s linear infinite;
+}
+@keyframes AnimationClip2{
+    50%{
+        left: 30px;
+        top: -20px;
+    }
+}
+.project h3{
+    color: purple;
+    font-size: 2em;
+    margin-top: .5em;
+    display: flex;
+    align-items: start;
+}
+.project p{
+    font-size: .8em;
+}
+
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 35vh;
+    padding: 0 100px;
+    overflow: hidden;
+    background-color: #282828;
+}
+.contact h2{
+    color: #e89cf9;
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-top: 2.5em;
+}
+.contact a{
+    color: #e89cf9;
+    font-size: .9em;
+    font-style: italic;
+}
+.contact p{
+    margin-top: .5em;
+}
+.contact .Details{
+    margin-left: 1.2em;
+}
+
+
+
+
+footer {
+    background-color: #282828;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+}
+
+footer p {
+    margin: 0;
+}

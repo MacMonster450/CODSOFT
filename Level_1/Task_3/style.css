@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+.Container{
+    background-color: grey;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.cal{
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: .7em;
+}
+.inp{
+    background-color: #222;
+    border: none;
+    font-size: 1.8em;
+    color: white;
+}
+.display {
+    background-color: darkgrey;
+    padding: 20px;
+    text-align: right;
+}
+#calDisplay{
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 2em;
+    color: white;
+    outline: none;
+}
+.num{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+button{
+    padding: 20px 40px;
+    font-size: 1.5em;
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: lightgray;
+}
+.operator{
+    background-color: mediumturquoise;
+    font-size: 1.5em;
+}
+.equal{
+    background-color: #4caf50;
+    grid-gap: span 2;
+}
+.clear{
+    background-color: #ff8c00;
+}
